@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		20C48B8A87885EB0DA38B381 /* Pods_VotingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893E46A2F02C8BC861115CE4 /* Pods_VotingApp.framework */; };
+		AE32675729522CC200958198 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE32675629522CC100958198 /* AdminViewController.swift */; };
+		AE32675929522CF400958198 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE32675829522CF400958198 /* UserViewController.swift */; };
+		AE32675B29522D7B00958198 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE32675A29522D7B00958198 /* AddViewController.swift */; };
 		AE45D334294907F3005B7230 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE45D333294907F3005B7230 /* GoogleService-Info.plist */; };
 		AEBCDAD32948C14400BFC2B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBCDAD22948C14400BFC2B9 /* AppDelegate.swift */; };
 		AEBCDAD52948C14400BFC2B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBCDAD42948C14400BFC2B9 /* SceneDelegate.swift */; };
@@ -22,6 +25,9 @@
 		1E8E01CC4CDA8C9237671500 /* Pods-VotingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingApp.release.xcconfig"; path = "Target Support Files/Pods-VotingApp/Pods-VotingApp.release.xcconfig"; sourceTree = "<group>"; };
 		893E46A2F02C8BC861115CE4 /* Pods_VotingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VotingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E41BC25621811D9074D7AD /* Pods-VotingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VotingApp.debug.xcconfig"; path = "Target Support Files/Pods-VotingApp/Pods-VotingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AE32675629522CC100958198 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		AE32675829522CF400958198 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		AE32675A29522D7B00958198 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		AE45D333294907F3005B7230 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEBCDACF2948C14400BFC2B9 /* VotingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VotingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBCDAD22948C14400BFC2B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				AEBCDADD2948C14600BFC2B9 /* LaunchScreen.storyboard */,
 				AEBCDAE02948C14600BFC2B9 /* Info.plist */,
 				AE45D333294907F3005B7230 /* GoogleService-Info.plist */,
+				AE32675629522CC100958198 /* AdminViewController.swift */,
+				AE32675829522CF400958198 /* UserViewController.swift */,
+				AE32675A29522D7B00958198 /* AddViewController.swift */,
 			);
 			path = VotingApp;
 			sourceTree = "<group>";
@@ -86,7 +95,6 @@
 				98E41BC25621811D9074D7AD /* Pods-VotingApp.debug.xcconfig */,
 				1E8E01CC4CDA8C9237671500 /* Pods-VotingApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,8 +223,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBCDAE72948EF1100BFC2B9 /* LoginViewController.swift in Sources */,
+				AE32675929522CF400958198 /* UserViewController.swift in Sources */,
+				AE32675B29522D7B00958198 /* AddViewController.swift in Sources */,
 				AEBCDAD32948C14400BFC2B9 /* AppDelegate.swift in Sources */,
 				AEBCDAD52948C14400BFC2B9 /* SceneDelegate.swift in Sources */,
+				AE32675729522CC200958198 /* AdminViewController.swift in Sources */,
 				AEBCDAE92948EF2900BFC2B9 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,20 +20,19 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var adminLabel: UILabel!
     
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-        if let user = Auth.auth().currentUser {
-            if user.displayName == "Admin"{
-                self.performSegue(withIdentifier: "adminSegue" , sender: nil)
-            }else {
-                self.performSegue(withIdentifier: "userSegue", sender: nil)
-            }
-        }
+//        if let user = Auth.auth().currentUser {
+//            if user.displayName == "Admin"{
+//                self.performSegue(withIdentifier: "adminSegue" , sender: nil)
+//            }else {
+//                self.performSegue(withIdentifier: "userSegue", sender: nil)
+//            }
+//        }
     }
    
   
