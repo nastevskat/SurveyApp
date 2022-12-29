@@ -10,26 +10,25 @@ import UIKit
 
 class AddViewController: UIViewController {
     
-    
     @IBOutlet weak var addNewLabela: UILabel!
     @IBOutlet weak var voteStart: UIDatePicker!
     @IBOutlet weak var voteEnd: UIDatePicker!
     @IBOutlet weak var questionTextField: UITextField!
-    @IBOutlet weak var optionTextField: UITextField!
     @IBOutlet weak var addNewOptionBtn: UIButton!
      
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-    @IBAction func addNewOptionPressed(_ sender: Any) {
-          let textFieldFrame = CGRect(origin: CGPoint(x: 50, y: 100), size: CGSize(width: 200, height: 30))
-              let textField = UITextField(frame: textFieldFrame)
-              textField.placeholder = "Type name"
-              
-              view?.addSubview(textField)
+    private var fieldHeight = 203
+    @IBAction private func addNewOptionPressed(_ sender: Any) {
+          fieldHeight+=44
+          let textFieldFrame = CGRect(origin: CGPoint(x: 20, y:fieldHeight), size: CGSize(width: 220, height: 34))
+          let opcija = UITextField(frame: textFieldFrame)
+          opcija.placeholder = " Enter option"
+          opcija.borderStyle = UITextField.BorderStyle.roundedRect
+          self.view.addSubview(opcija)
     }
     
 
