@@ -82,9 +82,9 @@
 				AEBCDADD2948C14600BFC2B9 /* LaunchScreen.storyboard */,
 				AEBCDAE02948C14600BFC2B9 /* Info.plist */,
 				AE45D333294907F3005B7230 /* GoogleService-Info.plist */,
-				AE32675629522CC100958198 /* AdminViewController.swift */,
 				AE32675829522CF400958198 /* UserViewController.swift */,
 				AE32675A29522D7B00958198 /* AddViewController.swift */,
+				AE32675629522CC100958198 /* AdminViewController.swift */,
 			);
 			path = VotingApp;
 			sourceTree = "<group>";
